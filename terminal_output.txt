@@ -1,0 +1,36 @@
+Terminal Output:
+
+
+Missing values:
+ Alcohol                         0
+Malicacid                       0
+Ash                             0
+Alcalinity_of_ash               0
+Magnesium                       0
+Total_phenols                   0
+Flavanoids                      0
+Nonflavanoid_phenols            0
+Proanthocyanins                 0
+Color_intensity                 0
+Hue                             0
+0D280_0D315_of_diluted_wines    0
+Proline                         0
+dtype: int64
+C:\Users\Monster\Desktop\489\hw\load_dataset.py:15: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X.fillna(X.mean(), inplace=True)  # Replace missing values with column mean
+
+First 5 rows after normalization:
+     Alcohol  Malicacid       Ash  Alcalinity_of_ash  Magnesium  ...  Proanthocyanins  Color_intensity       Hue  0D280_0D315_of_diluted_wines   Proline
+0  0.842105   0.191700  0.572193           0.257732   0.619565  ...         0.593060         0.372014  0.455285                      0.970696  0.561341
+1  0.571053   0.205534  0.417112           0.030928   0.326087  ...         0.274448         0.264505  0.463415                      0.780220  0.550642
+2  0.560526   0.320158  0.700535           0.412371   0.336957  ...         0.757098         0.375427  0.447154                      0.695971  0.646933
+3  0.878947   0.239130  0.609626           0.319588   0.467391  ...         0.558360         0.556314  0.308943                      0.798535  0.857347
+4  0.581579   0.365613  0.807487           0.536082   0.521739  ...         0.444795         0.259386  0.455285                      0.608059  0.325963
+
+[5 rows x 13 columns]
+
+Training set size: (142, 13)
+Testing set size: (36, 13)
